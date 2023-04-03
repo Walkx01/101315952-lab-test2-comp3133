@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ mission.mission_name }}</mat-card-title>
+    <mat-card-subtitle
+      >Launch Year: {{ mission.launch_year }}</mat-card-subtitle
+    >
+  </mat-card-header>
+  <img
+    mat-card-image
+    [src]="mission.links.mission_patch_small"
+    alt="Mission Patch"
+  />
+  <mat-card-content>
+    <p>{{ mission.details }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="openDialog(mission)" mat-button>View Details</button>
+  </mat-card-actions>
+</mat-card>

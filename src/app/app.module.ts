@@ -1,18 +1,34 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MissionlistComponent } from './components/missionlist/missionlist.component';
+import { MissionComponent } from './components/mission/mission.component';
+import { MissiondetailsComponent } from './components/missiondetails/missiondetails.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MissionlistComponent,
+    MissionComponent,
+    MissiondetailsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatCardModule,
+    MatDialogModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

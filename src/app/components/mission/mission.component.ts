@@ -15,10 +15,8 @@ export class MissionComponent {
   constructor(public dialog: MatDialog) {}
 
   openDialog(mission: Mission) {
-    const dialogRef = this.dialog.open(MissiondetailsComponent);
-
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
+    const dialogRef = this.dialog.open(MissiondetailsComponent, {
+      data: mission,
     });
   }
 }

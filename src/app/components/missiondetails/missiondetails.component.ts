@@ -1,5 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Mission } from 'src/model/mission';
 
 @Component({
   selector: 'app-missiondetails',
@@ -7,5 +8,6 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./missiondetails.component.css'],
 })
 export class MissiondetailsComponent {
-  constructor(@Inject(MAT_DIALOG_DATA) public data: { name: string }) {}
+  constructor(@Inject(MAT_DIALOG_DATA) public data: Mission) {}
+ 
 }

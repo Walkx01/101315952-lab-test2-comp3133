@@ -22,11 +22,5 @@ export class MissionlistComponent {
     });
   }
 
-  showDetails(mission: Mission) {
-    this.dialog.open(MissiondetailsComponent, {
-      height: '400px',
-      width: '600px',
-      data: mission,
-    });
-  }
+  
 }

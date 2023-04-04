@@ -1,3 +1,17 @@
 <h1>SpaceX Mission Launch List</h1>
 
+<form>
+  <label for="">Filter by year:</label>
+  <input
+    type="text"
+    name="selectedYear"
+    id="selectedYear"
+    [(ngModel)]="selectedYear"
+  />
+  <button (click)="filterByYear()">see results</button>
+</form>
+
+<br />
+<br />
+
 <app-mission *ngFor="let mission of missions" [mission]="mission"></app-mission>

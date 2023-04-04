@@ -5,7 +5,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { MissiondetailsComponent } from './components/missiondetails/missiondeta
     MatCardModule,
     MatDialogModule,
     MatIconModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

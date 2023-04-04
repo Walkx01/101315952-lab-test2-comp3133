@@ -2,11 +2,20 @@
 
 
 mat-card{
-    width: 100vw;
+   width: 100vw;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     background-color: gray;
    
     margin: 0rem 0rem 1rem 0rem;
+ 
 
 }
+
+
+
+
+
+
+
